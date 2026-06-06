@@ -20,7 +20,7 @@ const API_URL = "https://api.openweathermap.org/data/2.5";
 
 export default function HomeScreen() {
   const { isDarkMode } = useContext(ThemeContext);
-  const [city, setCity] = useState("Islamabad");
+  const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -43,7 +43,7 @@ export default function HomeScreen() {
     <View style={[styles.container, { backgroundColor: isDarkMode ? "#0F172A" : "#F8FAFC" }]}>
       <ScrollView contentContainerStyle={styles.scroll}>
         
-        <Text style={[styles.heading, { color: isDarkMode ? "#FFF" : "#1E293B" }]}>Weather Forecast</Text>
+        <Text style={[styles.heading, { color: isDarkMode ? "#FFF" : "#1E293B" }]}>Weather</Text>
 
         <View style={styles.searchBox}>
           <TextInput

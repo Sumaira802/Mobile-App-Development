@@ -6,7 +6,6 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-// CORS ko handle karna - Yeh bohot zaruri hai
 app.use(cors({
   origin: '*', // Allow all origins for testing
   methods: ['GET', 'POST'],

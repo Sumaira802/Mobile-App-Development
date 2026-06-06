@@ -35,7 +35,7 @@ export default function SignupScreen() {
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.container}>
       <ScrollView 
         contentContainerStyle={styles.scrollContainer} 
-        keyboardShouldPersistTaps="always" // Ye line click issue fix karti hai
+        keyboardShouldPersistTaps="always" 
       >
         <View style={styles.card}>
           <Text style={styles.title}>SIGN UP!</Text>

@@ -25,7 +25,7 @@ export default function ForecastScreen() {
 
   return (
     <View style={[styles.container, themeStyles.container]}>
-      <Text style={[styles.headerTitle, themeStyles.headerTitle]}>7-Day Forecast</Text>
+      <Text style={[styles.headerTitle, themeStyles.headerTitle]}>5-Day Forecast</Text>
       <FlatList
         data={data}
         keyExtractor={(item) => item.day}
